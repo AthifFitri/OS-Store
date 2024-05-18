@@ -1,0 +1,178 @@
+/* navigation bar */
+* {
+    margin: 0;
+}
+
+nav {
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+li.logo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul li:hover>.dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-content li:hover {
+    background-color: #ffffff;
+}
+
+nav a:hover,
+dropdown:hover {
+    background-color: red;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+li.search-bar {
+    padding-left: 550px;
+}
+
+li,
+.search-bar input {
+    padding: 5px;
+}
+
+li.search-bar button {
+    padding: 5px 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url("image/orderbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    ;
+}
+
+/* table */
+.bg-img {
+    background-image: url("image/orderbg.jpg");
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    padding: 20px;
+    background-color: white;
+}
+
+thead, tbody {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #ffffff;
+}
+
+thead {
+    background-color: #bebebe;
+    outline: none;
+}
+
+tbody {
+    background-color: #e6e3e3;
+    outline: none;
+}
+table {
+    border-collapse: collapse;
+    /* Optional: merges adjacent borders into a single border */
+    width: 100%;
+    height: 80%;
+    /* Optional: sets the table width */
+}
+
+th,
+td {
+
+    border: 1px solid black;
+    /* Sets a solid black border with a width of 1px */
+    padding: 8px;
+    /* Optional: adds some padding inside each cell */
+    vertical-align: top;
+    text-align: center;
+}
+
+tbody{
+
+    height: 200px;
+
+}
+
+/*button*/
+button {
+    cursor: pointer;
+    padding: 0px;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* option */

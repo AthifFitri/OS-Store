@@ -1,0 +1,325 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15 Jun 2023, 9:53:29 pm
+    Author     : ariff
+*/
+
+/* navbar */
+* {
+    margin: 0;
+}
+
+nav {
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+li.logo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul li:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-content li:hover {
+    background-color: #ffffff;
+}
+
+nav a:hover,
+dropdown:hover {
+    background-color: red;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* content */
+body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background: #f8f8f8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 0px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 19px;
+    font-size: 1.2rem;
+}
+
+.container {
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.window {
+    height: 540px;
+    width: 800px;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    z-index: 10;
+}
+/* FIRST HAVE */
+.order-info {
+    height: 100%;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.thin {
+    font-weight: 400;
+}
+
+.thin.small {
+    color: brown;
+}
+
+.small {
+    font-size: 12px;
+    font-size: 0.8rem;
+}
+
+.price {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    color: #4488dd;
+}
+
+.order-table td:first-of-type {
+    width: 25%;
+}
+
+.order-table {
+    position: relative;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #ddd;
+}
+
+.order-table td:last-of-type {
+    vertical-align: top;
+    padding-left: 25px;
+}
+
+.order-info-content {
+    table-layout: fixed;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.total {
+    margin-top: 25px;
+    font-size: 20px;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 30px;
+    right: 27px;
+    left: 35px;
+}
+
+.dense {
+    line-height: 1.2em;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.input-field {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    line-height: 1.5em;
+    font-size: 20px;
+    font-size: 1.3rem;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* SECOND HALF */
+.payment {
+    background: #333;
+    height: 100%;
+    width: 50%;
+    color: #eee;
+    justify-content: center;
+    font-size: 0.9rem;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+}
+
+.payment-content img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.payment-content {
+    margin-top: 25px;
+    flex-flow: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.payment-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .window {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 0px;
+    }
+
+    .order-info {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        border-radius: 0px;
+    }
+
+    .payment {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        border-radius: 0px;
+    }
+
+    .pay-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+.pay-btn {
+    border: none;
+    background: #22b877;
+    line-height: 2em;
+    border-radius: 10px;
+    font-size: 19px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    text-decoration: none;
+    width: calc(100% - 50px);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.pay-btn:hover {
+    background: red;
+    color: #eee;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
